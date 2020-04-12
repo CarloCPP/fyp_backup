@@ -1,0 +1,1 @@
+s:244:"<strong>Stack trace:</strong> <ul style="text-align:left;"><li>line 482 of /lib/setuplib.php: moodle_exception thrown</li><li>line 573 of /lib/moodlelib.php: call to print_error()</li><li>line 33 of /help.php: call to required_param()</li></ul>";

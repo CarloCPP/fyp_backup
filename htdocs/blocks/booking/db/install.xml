@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="blocks/booking/db" VERSION="20190113" COMMENT="XMLDB file containing all tables regarding the booking plug-in."
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+  <TABLES>
+    <TABLE NAME="room" COMMENT="Table containing all rooms">
+      <FIELDS>
+        <FIELD NAME="roomid" TYPE="int" LENGTH="4" NOTNULL="true" SEQUENCE="true" COMMENT="Primary Key for Room ID"/>
+        <FIELD NAME="roomnumber" TYPE="char" LENGTH="10" NOTNULL="true" SEQUENCE="false" COMMENT="Readable room number for easy reference"/>
+        <FIELD NAME="roomcapacity" TYPE="int" LENGTH="4" NOTNULL="true" SEQUENCE="false" COMMENT="Maximum Capacity of Room"/>
+        <FIELD NAME="roomtype" TYPE="char" LENGTH="20" NOTNULL="true" SEQUENCE="false" COMMENT="roomtype."/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primarykeyroomid" TYPE="primary" FIELDS="roomid" COMMENT="Primary Key for Room ID"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="booking" COMMENT="Booking Information.">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="startdateyyyy" TYPE="int" LENGTH="4" NOTNULL="true" SEQUENCE="false" COMMENT="Start year (in yyyy) of booking."/>
+        <FIELD NAME="startdatemm" TYPE="int" LENGTH="2" NOTNULL="true" SEQUENCE="false" COMMENT="Start month (in mm) of bookin"/>
+        <FIELD NAME="startdatedd" TYPE="int" LENGTH="2" NOTNULL="true" SEQUENCE="false" COMMENT="Start date (in dd) of booking."/>
+        <FIELD NAME="starttimehh" TYPE="int" LENGTH="2" NOTNULL="true" SEQUENCE="false" COMMENT="Starting hours (in hh) of the booking."/>
+        <FIELD NAME="starttimemm" TYPE="int" LENGTH="2" NOTNULL="true" SEQUENCE="false" COMMENT="Starting minute (in mm) of booking."/>
+        <FIELD NAME="durationmm" TYPE="int" LENGTH="4" NOTNULL="true" SEQUENCE="false" COMMENT="Duration of booking in minutes."/>
+        <FIELD NAME="description" TYPE="text" NOTNULL="true" SEQUENCE="false" COMMENT="Description."/>
+        <FIELD NAME="roomidforeignkey" TYPE="int" LENGTH="4" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="bookingpersonid" TYPE="int" LENGTH="20" NOTNULL="true" SEQUENCE="false" COMMENT="bookingpersonID."/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="roomidforeignkey" TYPE="foreign" FIELDS="roomidforeignkey" REFTABLE="room" REFFIELDS="roomid"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="location" COMMENT="Room Location.">
+      <FIELDS>
+        <FIELD NAME="locationid" TYPE="int" LENGTH="4" NOTNULL="true" SEQUENCE="true" COMMENT="ID for booking location."/>
+        <FIELD NAME="locationbuilding" TYPE="char" LENGTH="20" NOTNULL="true" SEQUENCE="false" COMMENT="Which building is the room located in."/>
+        <FIELD NAME="locationfloor" TYPE="int" LENGTH="2" NOTNULL="true" SEQUENCE="false" COMMENT="Which floor is the room located."/>
+        <FIELD NAME="locationroomnumber" TYPE="char" LENGTH="10" NOTNULL="true" SEQUENCE="false" COMMENT="Room number of the room."/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="locationid"/>
+      </KEYS>
+    </TABLE>
+  </TABLES>
+</XMLDB>

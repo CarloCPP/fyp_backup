@@ -1,0 +1,5 @@
+s:374:"<p>A scale determines how proficiency is measured in a competency. After selecting a scale, it needs to be configured.</p>
+
+<ul><li>The item selected as 'Default' is the rating given when a competency is automatically completed.</li>
+<li>The item(s) selected as 'Proficient' indicate(s) which value(s) will mark the competencies as proficient when they are rated.</li>
+</ul>";

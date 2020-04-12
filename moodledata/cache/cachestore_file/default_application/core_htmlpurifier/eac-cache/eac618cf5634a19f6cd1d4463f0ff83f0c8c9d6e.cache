@@ -1,0 +1,3 @@
+s:435:"<p>Determines how student submission attempts are reopened. The available options are:</p>
+
+<ul><li>Never - The student submission cannot be reopened.</li><li>Manually - The student submission can be reopened by a teacher.</li><li>Automatically until pass - The student submission is automatically reopened until the student achieves the grade to pass value set in the Gradebook (Gradebook setup section) for this assignment.</li></ul>";

@@ -1,0 +1,23 @@
+.form-group.row.fitem {
+  /* display: inline-flex; */
+  /* white-space: nowrap; */
+  white-space: normal;
+
+}
+
+
+.col-md-9.form-inline.felement {
+  /* display: inline-flex; */
+}
+
+div#responseText_G,div#responseText_N,div#responseText_Q,div#responseText_R{
+  visibility: hidden;
+  /* float:left; */
+  width: 50%;
+  margin-left: 28.5%;
+  text-align: left; /* always margin before align */
+  /* text-align: center; */
+  font-size: 80%;
+
+
+}

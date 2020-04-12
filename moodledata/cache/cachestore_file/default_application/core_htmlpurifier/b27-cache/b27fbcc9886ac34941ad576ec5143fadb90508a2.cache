@@ -1,0 +1,10 @@
+s:1124:"<p>Status of a badge determines its behaviour in the system:</p>
+
+<ul><li><p><strong>AVAILABLE</strong> – Means that this badge can be earned by users. While a badge is available to users, its criteria cannot be modified.</p></li>
+<li><p><strong>NOT AVAILABLE</strong> – Means that this badge is not available to users and cannot be earned or manually issued. If such badge has never been issued before, its criteria can be changed.</p></li>
+</ul><p>Once a badge has been issued to at least one user, it automatically becomes <strong>LOCKED</strong>. Locked badges can still be earned by users, but their criteria can no longer be changed. If you need to modify details or criteria of a locked badge, you can duplicate this badge and make all the required changes.</p>
+
+<p><em>Why do we lock badges?</em></p>
+
+<p>We want to make sure that all users complete the same requirements to earn a badge. Currently, it is not possible to revoke badges. If we allowed badges requirements to be modified all the time, we would most likely end up with users having the same badge for meeting completely different requirements.</p>
+";

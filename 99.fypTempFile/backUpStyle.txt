@@ -1,0 +1,41 @@
+/* 
+table.roomTable{
+  width:70%;
+  border: 2px solid #7999b2;
+  border-collapse: collapse;
+
+}
+
+.card-body{
+    /* Please DONT DELETE THIS, it avoids overflowing */
+    overflow: hidden;
+    overflow-x: auto;
+    clear: both;
+    width: 100%;
+}
+
+
+
+
+.expand{
+  width:70%;
+  word-break: keep-all;
+  /* border: 2px solid black; */
+  margin-bottom:2%;
+}
+
+
+
+
+/* For Debugging */
+
+/* @media only screen and (min-width: 768px) {
+  .tableCell{
+    /* color: #FFFFFF;
+    background-color: #b3c1ca; */
+  }
+} */
+
+/* .roomTableTopCell{
+color:red;
+} */ */

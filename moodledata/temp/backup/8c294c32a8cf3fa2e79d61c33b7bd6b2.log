@@ -1,0 +1,15 @@
+[Tue 11 Sep 2018 17:08:56 HKT] [info] instantiating backup controller 8c294c32a8cf3fa2e79d61c33b7bd6b2
+[Tue 11 Sep 2018 17:08:56 HKT] [debug] setting controller status to 100
+[Tue 11 Sep 2018 17:08:56 HKT] [debug] loading controller plan
+[Tue 11 Sep 2018 17:08:56 HKT] [debug] setting controller status to 300
+[Tue 11 Sep 2018 17:08:56 HKT] [debug] applying plan defaults
+[Tue 11 Sep 2018 17:08:56 HKT] [debug] setting controller status to 400
+[Tue 11 Sep 2018 17:08:56 HKT] [debug] setting file inclusion to 1
+[Tue 11 Sep 2018 17:08:56 HKT] [info] checking plan security
+[Tue 11 Sep 2018 17:08:56 HKT] [debug] setting controller status to 700
+[Tue 11 Sep 2018 17:08:56 HKT] [debug] saving controller to db
+[Tue 11 Sep 2018 17:08:56 HKT] [debug] calculating controller checksum 332981dc4d37b07c517ca8f6002aaa05
+[Tue 11 Sep 2018 17:08:56 HKT] [debug] loading controller from db
+[Tue 11 Sep 2018 17:08:56 HKT] [debug] setting controller status to 800
+[Tue 11 Sep 2018 17:08:59 HKT] [debug] setting controller status to 1000
+[Tue 11 Sep 2018 17:08:59 HKT] [debug] saving controller to db

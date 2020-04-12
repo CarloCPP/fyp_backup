@@ -1,0 +1,21 @@
+.outTable{
+border: 1px solid grey;
+display: inline-block;
+/* vertical-align: top; */
+float:left;
+width: 18%;
+margin-right: 0px;
+padding: 10px;
+overflow: visible;
+table-layout:fixed;
+
+};
+
+
+
+
+
+td.td_day{
+  font-weight: bold; !important
+  color:#336699;!important
+}
